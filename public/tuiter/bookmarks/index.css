@@ -1,0 +1,228 @@
+/* html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} */
+
+
+body {
+    background-color: black;
+
+}
+
+.wd-panel {
+    border-left: rgb(47, 51, 54) solid 1px;
+    border-right: rgb(47, 51, 54) solid 1px;
+
+}
+
+.wd-hr {
+    border: rgb(47, 51, 54) solid 1px;
+}
+
+.wd-photo img {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+.wd-head-bar {
+    padding-left: 16px;
+    border-bottom: rgb(47, 51, 54) solid 1px;
+}
+
+.wd-whole-post {
+    margin-left: 16px;
+    display: flex;
+}
+
+.wd-head-bar {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    display: flex;
+
+}
+
+.wd-head-1 .wd-head-2 {
+    padding: 0;
+}
+
+.wd-head-1 {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.wd-head-2 {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+
+}
+
+.wd-head-right {
+    color: rgb(29, 161, 242);
+    font: bold;
+    align-self: center;
+}
+
+.wd-head-left {
+    padding-left: 16px;
+    flex: 1;
+}
+
+.wd-dot {
+    padding-right: 16px;
+}
+
+.wd-dot-grey {
+    padding-right: 16px;
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-area {
+    margin-left: 12px;
+}
+
+.wd-post-first-line {
+    display: flex;
+}
+
+.wd-post-first-line-left {
+    flex: 1;
+}
+
+.wd-post-first-line-right {
+    float: right;
+}
+
+.wd-post-content {
+    margin-right: 16px;
+    margin-bottom: 12px;
+    color: white;
+    font-size: 15px;
+}
+
+.wd-post-name {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-post-date {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+}
+
+.wd-post-box {
+    /* border-radius: 5%;
+    border: rgb(47, 51, 54) solid 1px; */
+    width: 504px;
+}
+
+.wd-post-pic {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.wd-post-pic img {
+    width: 504px;
+    height: 264px;
+
+    max-width: 100%;
+    max-height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: rgb(47, 51, 54) solid 1px;
+
+}
+
+.wd-post-pic-content {
+    width: 480px;
+    border: rgb(47, 51, 54) solid 1px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: -6px;
+    padding: 12px;
+}
+
+.wd-post-pic-content-head {
+    color: white;
+    font-size: 15px;
+
+}
+
+.wd-post-pic-content-body {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+
+}
+
+.wd-icon-line {
+    padding-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.wd-icon-line span {
+    color: rgb(110, 118, 125);
+    font-size: 12px;
+    align-self: center;
+
+}
+
+
+.bi {
+    padding-right: 12px;
+}
+
+.wd-post-pic-content-head {
+    color: white;
+}
+
+#reply-img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+.wd-post-nonpic-head div {
+    color: white;
+    font-size: 15px;
+    align-items: center;
+    padding-left: 5px;
+    padding-bottom: 2px;
+}
+
+.wd-post-nonpic-head {
+    display: flex;
+    align-items: center;
+}
+
+#reply-date {
+    color: rgb(110, 118, 125);
+}
+
+.wd-post-box-2 {
+    width: 480px;
+    border: rgb(47, 51, 54) solid 1px;
+    padding: 12px;
+    border-radius: 20px;
+}

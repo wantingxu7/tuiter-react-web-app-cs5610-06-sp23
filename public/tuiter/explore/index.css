@@ -1,0 +1,159 @@
+body {
+    background-color: black;
+}
+
+.wd-panel {
+    border-left: rgb(47, 51, 54) solid 1px;
+    border-right: rgb(47, 51, 54) solid 1px;
+
+}
+
+.wd-search-bar {
+    width: 100%;
+}
+
+.wd-search-box {
+    border-radius: 50px;
+    width: 85%;
+    height: 42px;
+    color: white;
+    background-color: rgb(47, 51, 54);
+    border: 0;
+    margin-left: 16px;
+}
+
+.wd-explore-settings {
+    width: 3%;
+    position: relative;
+    right: 0px;
+    /* padding: 10px 12px; */
+    pointer-events: none;
+    margin: 12px;
+    float: right;
+}
+
+.wd-dot {
+    color: rgb(110, 118, 125);
+    font-size: 5px;
+    padding-right: 16px;
+
+}
+
+.wd-topic-and-dot {
+    position: relative;
+    display: flex;
+    /* flex-basis: auto; */
+
+}
+
+.wd-topic-left {
+    width: 95%;
+}
+
+::placeholder {
+    color: rgb(110, 118, 125);
+    font-size: 16px;
+    padding-left: 50px;
+}
+
+div.wd-hyperlinks {
+    /* margin-left: 16px; */
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    color: rgb(110, 118, 125);
+    border-bottom: rgb(47, 51, 54) solid;
+}
+
+div.wd-hyperlinks span {
+    display: table-cell;
+    text-align: center;
+    padding: 16px;
+    font-size: 15px;
+}
+
+
+#hyperlink-for-you {
+    color: rgb(29, 161, 242);
+    border-bottom: solid;
+    border-bottom-color: rgb(29, 161, 242);
+}
+
+.wd-post {
+    border: solid 1px rgb(47, 51, 54);
+    padding: 16px;
+    padding-right: 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.wd-post-first {
+    border: solid 1px rgb(47, 51, 54);
+    border-left: none;
+    border-right: none;
+}
+
+.wd-text-padding {
+    padding-bottom: 5px;
+}
+
+.wd-topic {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-title {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+.wd-number-of-tuits {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+
+}
+
+.wd-suggested-author {
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+.wd-suggested-date {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-suggested-title {
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.wd-suggested-post {
+    display: flex;
+    flex-basis: auto;
+}
+
+.wd-news-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    margin-right: 16px;
+}
+
+.wd-right {
+    padding-right: 16px;
+}
+
+
+.wd-left {
+    width: 90%;
+    padding-right: 50px;
+}
