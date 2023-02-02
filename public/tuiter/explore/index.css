@@ -50,10 +50,11 @@ body {
     width: 95%;
 }
 
+
 ::placeholder {
     color: rgb(110, 118, 125);
     font-size: 16px;
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 div.wd-hyperlinks {
