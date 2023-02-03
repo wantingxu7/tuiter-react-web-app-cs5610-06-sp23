@@ -42,13 +42,12 @@ body {
 .wd-topic-and-dot {
     position: relative;
     display: flex;
-    /* flex-basis: auto; */
+    flex-basis: auto;
+    justify-content: space-between;
 
 }
 
-.wd-topic-left {
-    width: 95%;
-}
+
 
 
 ::placeholder {
@@ -80,19 +79,29 @@ div.wd-hyperlinks span {
     border-bottom-color: rgb(29, 161, 242);
 }
 
+.wd-post-area {
+    border-top: transparent;
+}
+
 .wd-post {
-    border: solid 1px rgb(47, 51, 54);
+
     padding: 16px;
     padding-right: 0;
-    border-top: none;
+    border-bottom: solid 1px rgb(47, 51, 54);
+    /* border-top: none;
     border-left: none;
-    border-right: none;
+    border-right: none; */
+}
+
+.wd-first-line-dot {
+    padding-right: 16px;
 }
 
 .wd-post-first {
     border: solid 1px rgb(47, 51, 54);
     border-left: none;
     border-right: none;
+    padding-top: 0;
 }
 
 .wd-text-padding {
@@ -146,7 +155,7 @@ div.wd-hyperlinks span {
     width: 100px;
     height: 100px;
     border-radius: 15px;
-    margin-right: 16px;
+    /* margin-right: 16px; */
 }
 
 .wd-right {
