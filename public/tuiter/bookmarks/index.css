@@ -25,6 +25,10 @@ body {
 
 }
 
+a {
+    color: rgb(110, 118, 125);
+}
+
 .wd-panel {
     border-left: rgb(47, 51, 54) solid 1px;
     border-right: rgb(47, 51, 54) solid 1px;
