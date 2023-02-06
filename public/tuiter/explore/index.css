@@ -2,6 +2,11 @@ body {
     background-color: black;
 }
 
+a {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
 .wd-panel {
     border-left: rgb(47, 51, 54) solid 1px;
     border-right: rgb(47, 51, 54) solid 1px;
@@ -80,9 +85,14 @@ body {
 
 
 #hyperlink-for-you {
+
     color: rgb(29, 161, 242);
     border-bottom: solid;
     border-bottom-color: rgb(29, 161, 242);
+}
+
+#hyperlink-for-you-text {
+    color: rgb(29, 161, 242);
 }
 
 .wd-post-area {
