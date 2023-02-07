@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    /* background-color: black; */
 }
 
 a {
@@ -7,24 +7,66 @@ a {
     text-decoration: none;
 }
 
-.wd-panel {
-    border-left: rgb(47, 51, 54) solid 1px;
-    border-right: rgb(47, 51, 54) solid 1px;
+.container {
+    display: flex;
+    justify-content: space-between;
+}
 
+.wd-container-left {
+    display: block;
+}
+
+.wd-tuit-button {
+    width: 100%;
+    color: white;
+    background-color: rgb(19, 106, 255);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    border: none;
 }
 
 .wd-search-bar {
-    width: 100%;
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+
+.nav-link {
+    font-size: 15px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .wd-search-box {
     border-radius: 50px;
-    width: 85%;
-    height: 42px;
-    color: white;
-    background-color: rgb(47, 51, 54);
-    border: 0;
-    margin-left: 16px;
+    width: 90%;
+    height: 40px;
+    color: gray;
+    border: rgb(205, 205, 205) solid 1px;
+    border-left: none;
+}
+
+.wd-search-box-icon {
+    background-color: white;
+    height: 40px;
+    border-right: none;
+    font-size: 15px;
+    border-radius: 50px;
+
+}
+
+.form-control.wd-search-box {
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .wd-explore-settings {
@@ -33,8 +75,10 @@ a {
     right: 0px;
     /* padding: 10px 12px; */
     pointer-events: none;
-    margin: 12px;
+    /* margin-top: 16px;
+    margin-bottom: 16px; */
     float: right;
+    align-self: center;
 }
 
 .wd-dot {
@@ -52,7 +96,10 @@ a {
 
 }
 
-
+.wd-tab-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
 
 
 ::placeholder {
@@ -97,6 +144,8 @@ a {
 
 .wd-post-area {
     border-top: transparent;
+    /* border-left: rgb(47, 51, 54) solid 1px;
+    border-right: rgb(47, 51, 54) solid 1px; */
 }
 
 .wd-post {
@@ -104,9 +153,6 @@ a {
     padding: 16px;
     padding-right: 0;
     border-bottom: solid 1px rgb(47, 51, 54);
-    /* border-top: none;
-    border-left: none;
-    border-right: none; */
 }
 
 .wd-first-line-dot {
@@ -130,7 +176,7 @@ a {
 }
 
 .wd-title {
-    color: white;
+    color: gray;
     font-weight: bold;
     font-size: 16px;
 
@@ -144,7 +190,7 @@ a {
 }
 
 .wd-suggested-author {
-    color: white;
+    color: gray;
     font-weight: bold;
     font-size: 13px;
 
@@ -156,7 +202,7 @@ a {
 }
 
 .wd-suggested-title {
-    color: white;
+    color: gray;
     font-weight: bold;
     font-size: 16px;
 
@@ -182,4 +228,126 @@ a {
 .wd-left {
     width: 90%;
     padding-right: 50px;
+}
+
+.list-group-item {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.wd-list-group-item-left {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.wd-follow-button {
+    color: white;
+    background-color: rgb(19, 106, 255);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 40px;
+}
+
+.wd-follow-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-follow-middle {
+    padding-left: 15px;
+}
+
+
+
+.wd-one-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-img-area {
+    position: relative;
+}
+
+.wd-img-area-text {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .wd-follow-middle {
+        padding-left: 0;
+    }
+
+    .wd-follow-row {
+        display: flex;
+    }
+
+    .wd-follow-name {
+        white-space: nowrap;
+    }
+
+    .list-group-item {
+        padding-right: 0;
+        /* white-space: nowrap; */
+        /* overflow: hidden;
+        text-overflow: clip; */
+    }
+
+    .wd-follow-button {
+        margin-right: 15px;
+        align-items: center;
+    }
+
+    .wd-list-group-item-left span {
+        display: none;
+    }
+
+    .wd-one-post-right {
+        margin-right: 15px;
+    }
+
+}
+
+
+/* medium */
+@media (max-width:992px) {
+    .container.wd-container-right {
+        display: none;
+    }
+}
+
+
+/* small */
+@media (max-width:768px) {
+    .container.wd-container-right {
+        display: none;
+    }
+
+    .wd-nav-entertainment {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .container.wd-container-right {
+        display: none;
+    }
+
+    .wd-nav-entertainment {
+        display: none;
+    }
+
+    .container {
+        width: fit-content;
+    }
+
 }
