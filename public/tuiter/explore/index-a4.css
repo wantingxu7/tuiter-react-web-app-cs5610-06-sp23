@@ -16,6 +16,10 @@ a {
     display: block;
 }
 
+.wd-container-right {
+    padding-left: 0;
+}
+
 .wd-tuit-button {
     width: 100%;
     color: white;

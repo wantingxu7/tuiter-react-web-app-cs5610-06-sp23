@@ -9,10 +9,10 @@ const NavigationSidebar = () => {
 <ul id="navigationSidebar" class="list-group">
 <a href="#1" class="list-group-item wd-list-group-item-left"><i class="fa-brands fa-twitter"></i>
 </a>
-<a href="../HomeScreen/index.html" class="list-group-item ${loc.split("/")[4] === 'HomeScreen' ? 'active' : ' '} wd-list-group-item-left"><i class="fa-solid fa-house me-1"></i>
+<a href="../HomeScreen/index.html" class="list-group-item  wd-list-group-item-left"><i class="fa-solid fa-house me-1"></i>
     <span> Home</span>
 </a>
-<a href="../explore/index.html" class="list-group-item ${loc.split("/")[4] === 'explore' ? 'active' : ' '} wd-list-group-item-left"><i
+<a href="../explore/index.html" class="list-group-item  wd-list-group-item-left"><i
         class="fa-solid fa-hashtag me-1"></i>
     <span> Explore</span>
 </a>
@@ -42,16 +42,7 @@ const NavigationSidebar = () => {
 </div>
 `
 
-        const a = [
-                '<ul id="navigationSidebar" class="list-group">',
-                '<a href="#1" class="list-group-item wd-list-group-item-left"><i class="fa-brands fa-twitter"></i></a>',
 
-
-
-
-
-
-        ];
 
         return output;
 
