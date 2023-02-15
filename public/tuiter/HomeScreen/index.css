@@ -1,0 +1,398 @@
+/* body {
+    background-color: black;
+} */
+
+a {
+    color: rgb(110, 118, 125);
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-container-left {
+    display: block;
+}
+
+.wd-tuit-button {
+    width: 100%;
+    color: white;
+    background-color: rgb(19, 106, 255);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    text-align: center;
+    align-items: center;
+    border: none;
+}
+
+.wd-search-bar {
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+
+}
+
+.nav-link {
+    font-size: 15px;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wd-search-box {
+    border-radius: 50px;
+    width: 90%;
+    height: 40px;
+    color: gray;
+    border: rgb(205, 205, 205) solid 1px;
+    border-left: none;
+}
+
+.wd-search-box-icon {
+    background-color: white;
+    height: 40px;
+    border-right: none;
+    font-size: 15px;
+    border-radius: 50px;
+    border-color: lightgrey;
+
+}
+
+.form-control.wd-search-box {
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.wd-explore-settings {
+    width: 3%;
+    position: relative;
+    right: 0px;
+    /* padding: 10px 12px; */
+    pointer-events: none;
+    /* margin-top: 16px;
+    margin-bottom: 16px; */
+    float: right;
+    align-self: center;
+}
+
+.wd-dot {
+    color: rgb(110, 118, 125);
+    font-size: 5px;
+    padding-right: 16px;
+
+}
+
+.wd-topic-and-dot {
+    position: relative;
+    display: flex;
+    flex-basis: auto;
+    justify-content: space-between;
+
+}
+
+.wd-tab-line {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+::placeholder {
+    color: rgb(110, 118, 125);
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.wd-hyperlinks {
+    /* margin-left: 16px; */
+    /* display: table; */
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    table-layout: fixed;
+    color: rgb(110, 118, 125);
+    border-bottom: rgb(47, 51, 54) solid;
+
+}
+
+.wd-hyperlinks span {
+    display: table-cell;
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    font-size: 15px;
+}
+
+
+#hyperlink-for-you {
+
+    color: rgb(29, 161, 242);
+    border-bottom: solid;
+    border-bottom-color: rgb(29, 161, 242);
+}
+
+#hyperlink-for-you-text {
+    color: rgb(29, 161, 242);
+}
+
+.wd-post-area {
+    border-top: transparent;
+    /* border-left: rgb(47, 51, 54) solid 1px;
+    border-right: rgb(47, 51, 54) solid 1px; */
+}
+
+.wd-post {
+
+    padding: 16px;
+    padding-right: 0;
+    border-bottom: solid 1px rgb(47, 51, 54);
+}
+
+.wd-first-line-dot {
+    padding-right: 16px;
+}
+
+.wd-post-first {
+    border: solid 1px rgb(47, 51, 54);
+    border-left: none;
+    border-right: none;
+    padding-top: 0;
+}
+
+.wd-text-padding {
+    padding-bottom: 5px;
+}
+
+.wd-topic {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-title {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+
+.wd-number-of-tuits {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+
+}
+
+.wd-suggested-author {
+    color: gray;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+
+.wd-suggested-date {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+}
+
+.wd-suggested-title {
+    color: gray;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.wd-suggested-post {
+    display: flex;
+    flex-basis: auto;
+}
+
+.wd-news-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 15px;
+    /* margin-right: 16px; */
+}
+
+.wd-right {
+    padding-right: 16px;
+}
+
+
+.wd-left {
+    width: 90%;
+    padding-right: 50px;
+}
+
+.list-group-item {
+    font-size: 15px;
+    padding-left: 15px;
+}
+
+.wd-list-group-item-left {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    padding-right: 0;
+}
+
+.wd-follow-button {
+    color: white;
+    background-color: rgb(19, 106, 255);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: none;
+    border-radius: 40px;
+}
+
+.wd-follow-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wd-follow-middle {
+    padding-left: 15px;
+}
+
+
+
+.wd-one-post {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-img-area {
+    position: relative;
+}
+
+.wd-img-area-text {
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+    .wd-follow-middle {
+        padding-left: 0;
+    }
+
+    .wd-follow-row {
+        display: flex;
+    }
+
+    .wd-follow-name {
+        white-space: nowrap;
+    }
+
+    .list-group-item {
+        padding-right: 0;
+        /* white-space: nowrap; */
+        /* overflow: hidden;
+        text-overflow: clip; */
+    }
+
+    .wd-follow-button {
+        margin-right: 15px;
+        align-items: center;
+    }
+
+    .wd-list-group-item-left span {
+        display: none;
+    }
+
+    .wd-one-post-right {
+        margin-right: 15px;
+    }
+
+}
+
+
+/* medium */
+@media (max-width:992px) {
+    .container.wd-container-right {
+        display: none;
+    }
+}
+
+
+/* small */
+@media (max-width:768px) {
+    .container.wd-container-right {
+        display: none;
+    }
+
+    .wd-nav-entertainment {
+        display: none;
+    }
+}
+
+@media (max-width:576px) {
+    .container.wd-container-right {
+        display: none;
+    }
+
+    .wd-nav-entertainment {
+        display: none;
+    }
+
+    .container {
+        width: fit-content;
+    }
+
+}
+
+.wd-profile-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-top: 12px;
+}
+
+.wd-one-post {
+    display: flex;
+}
+
+.wd-first-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-content-img {
+    width: 100%;
+    height: 100%;
+}
+
+.wd-below-content {
+    border: lightgray solid 1px;
+    border-radius: 20px;
+}
+
+.wd-last-line {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wd-content-img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: lightgrey solid 1px;
+
+}
+
+.wd-one-post-main {
+    border-left: lightgrey solid 1px;
+    border-right: lightgrey solid 1px;
+    border-bottom: lightgrey solid 1px;
+}
