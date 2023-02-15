@@ -8,7 +8,7 @@ function exploreComponent() {
     $('#wd-explore').append(`
     <div class="col-xxl-2 col-xl-2 col-lg-1 col-md-2 col-sm-2 col-xs-2 wd-container-left"
     style="padding-right:20px">
-    ${NavigationSidebar()}
+    ${NavigationSidebar("explore")}
     </div>
 
     <div class="wd-post-area  col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10 col-xs-10" style="padding-right:20px">
