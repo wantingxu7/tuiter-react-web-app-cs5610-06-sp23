@@ -65,7 +65,7 @@ a {
     border-right: none;
     font-size: 15px;
     border-radius: 50px;
-
+    border-color: lightgrey;
 }
 
 .form-control.wd-search-box {

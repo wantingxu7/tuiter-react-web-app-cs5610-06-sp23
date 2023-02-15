@@ -12,7 +12,7 @@ function exploreComponent() {
     </div>
 
     <div class="wd-post-area  col-xxl-6 col-xl-6 col-lg-7 col-md-10 col-sm-10 col-xs-10" style="padding-right:20px">
-    ${ExploreComponent()}
+    ${ExploreComponent("1")}
     </div>
 
     <div class="container  col-xxl-4 col-xl-4 col-lg-4 wd-container-right" style="padding-right:20px padding-left:0">

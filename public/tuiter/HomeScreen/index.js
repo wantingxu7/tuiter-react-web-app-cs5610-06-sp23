@@ -14,7 +14,7 @@ function exploreComponent() {
 
     
     <div class=" col-xxl-4 col-xl-4 col-lg-4 d-none d-lg-block wd-container-right" style="padding-right:20px;">
-    ${ExploreComponent()}</div>
+    ${ExploreComponent("0")}</div>
    
    `);
 }
