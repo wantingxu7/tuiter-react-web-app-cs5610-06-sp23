@@ -18,6 +18,7 @@ function exploreComponent() {
    
    `);
 }
+
 $(exploreComponent);
 
 $(document).ready(function () {
