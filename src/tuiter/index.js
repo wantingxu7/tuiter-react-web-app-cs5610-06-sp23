@@ -1,8 +1,6 @@
 import Nav from "../nav";
 import NavigationSidebar
     from "./navigation-sidebar";
-import WhoToFollowListItem
-    from "./who-to-follow-list/who-to-follow-list-item";
 import WhoToFollowList from "./who-to-follow-list/index.js";
 import PostSummaryItem from "./post-summary-list/post-summary-item.js";
 import PostSummaryList from "./post-summary-list/index";
