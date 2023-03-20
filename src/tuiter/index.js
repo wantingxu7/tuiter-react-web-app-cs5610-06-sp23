@@ -28,7 +28,7 @@ function Tuiter() {
 
           <Routes>
             <Route path="home" element={<HomeComponent/>}/>
-            <Route path="/" element={<ExploreComponent/>}/>
+            <Route path="/" element={<HomeComponent/>}/>
             <Route path="explore" element={<ExploreComponent/>}/>
           </Routes>
 

@@ -9,7 +9,7 @@ a {
 
 .container {
     display: flex;
-    justify-content: space-between;
+    /*justify-content: space-between;*/
 }
 
 .wd-container-left {
@@ -395,7 +395,25 @@ a {
 }
 
 .wd-one-post-main {
-    border-left: lightgrey solid 1px;
-    border-right: lightgrey solid 1px;
-    border-bottom: lightgrey solid 1px;
+    /*border-left: lightgrey solid 1px;*/
+    /*border-right: lightgrey solid 1px;*/
+    /*border-bottom: lightgrey solid 1px;*/
+    /*display: flex;*/
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    /*width: 100%;*/
+}
+
+
+.wd-post-right {
+    width: 100%;
+}
+
+
+.wd-first-line-right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
