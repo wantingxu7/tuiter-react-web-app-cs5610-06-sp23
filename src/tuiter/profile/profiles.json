@@ -1,0 +1,14 @@
+{
+  "firstName": "Wanting",
+  "lastName": "Xu",
+  "handle": "@wantingxu",
+  "profilePicture": "java-icon.png",
+  "bannerPicture": "banner.png",
+  "bio": "Student in Northeastern University.",
+  "website": "youtube.com/webdevtv",
+  "location": "San Jose, CA",
+  "dateOfBirth": "7/6/1996",
+  "dateJoined": "4/2009",
+  "followingCount": 123,
+  "followersCount": 456
+}

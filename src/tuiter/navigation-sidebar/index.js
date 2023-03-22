@@ -6,13 +6,14 @@ const NavigationSidebar = () => {
   const {pathname} = useLocation();
   const paths = pathname.split('/')
   const active = paths[2];
+  // console.log(paths)
 
   return (
     <div className="list-group wd-font-18">
       <a className="list-group-item wd-nowrap wd-flex ps-2"><i
         className="fa-brands fa-twitter"></i></a>
       <Link to="/tuiter/home" className={`list-group-item wd-nowrap wd-flex ps-2
-                    ${active === 'home' || 'tuiter' && active !== 'explore' ? 'active' : ''}`}><i
+                    ${active === 'home' || paths.length === 2 || active === '' ? 'active' : ''}`}><i
         className="fa-solid fa-house me-1 "></i>
         <span className={"wd-lg-block"}>Home</span>
       </Link>
@@ -40,10 +41,15 @@ const NavigationSidebar = () => {
                     ${active === 'lists' ? 'active' : ''}`}><i className="fa-solid fa-list-ul me-1"></i>
         <span className={"wd-lg-block"}>Lists</span>
       </a>
-      <a className={`list-group-item wd-nowrap ps-2
-                    ${active === 'profile' ? 'active' : ''}`}><i className="fa-solid fa-user me-1"></i>
+      <Link to="/tuiter/profile" className={`list-group-item wd-nowrap ps-2
+                    ${active === 'profile' || active === 'edit-profile' ? 'active' : ''}`}><i
+        className="fa-solid fa-user me-1"></i>
         <span className={"wd-lg-block"}>Profile</span>
-      </a>
+      </Link>
+      {/*<a className={`list-group-item wd-nowrap ps-2*/}
+      {/*              ${active === 'profile' ? 'active' : ''}`}><i className="fa-solid fa-user me-1"></i>*/}
+      {/*  <span className={"wd-lg-block"}>Profile</span>*/}
+      {/*</a>*/}
       <a className={`list-group-item wd-nowrap ps-2
                     ${active === 'more' ? 'active' : ''}`}><i className="fa-solid fa-ellipsis me-1"></i>
         <span className={"wd-lg-block"}>More</span>

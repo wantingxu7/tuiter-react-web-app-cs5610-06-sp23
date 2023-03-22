@@ -1,0 +1,65 @@
+.banner-container {
+    position: relative;
+}
+
+.avatar-container {
+    position: absolute;
+    bottom: -69px;
+    left: 20px;
+    right: 0;
+    z-index: 2;
+}
+
+.banner-image {
+
+    height: 250px;
+    width: 100%;
+    z-index: 1;
+}
+
+.avatar-image {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: white;
+}
+
+
+.edit-profile-button {
+    position: absolute;
+    /*top: 370px;*/
+    bottom: -55px;
+    right: 20px;
+    z-index: 3;
+    border-radius: 80px;
+    height: 45px;
+}
+
+.normal-text-grey {
+    color: #657786;
+    font-size: 15px;
+}
+
+.normal-text-black {
+    color: #14171a;
+    font-size: 15px;
+}
+
+.title-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.icon {
+    font-size: 20px;
+    color: #657786;
+}
+
+.wd-back-icon {
+    cursor: pointer;
+}
+
+.wd-back-icon:hover {
+    opacity: 0.5;
+}
