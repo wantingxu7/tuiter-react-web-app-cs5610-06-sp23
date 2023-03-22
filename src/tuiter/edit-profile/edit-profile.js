@@ -87,7 +87,9 @@ const EditProfileComponent = () => {
         </div>
         <div className="banner-container mt-1">
           <div className="avatar-container " style={{width: 'max-content'}}>
-            <img className='avatar-image' src={`../../images/${formValues.profilePicture}`}/>
+            <img
+              style={{filter: 'brightness(75%)'}}
+              className='avatar-image' src={`../../images/${formValues.profilePicture}`}/>
             <div className={'me-2 avatar-center'} style={{
               backgroundColor: 'black',
               borderRadius: '50%',
@@ -105,6 +107,7 @@ const EditProfileComponent = () => {
           </div>
           <img
             className="banner-image"
+            style={{filter: 'brightness(75%)'}}
             src={
               '../../images/banner.png'}/>
           <div className={'d-flex banner-center'}>
