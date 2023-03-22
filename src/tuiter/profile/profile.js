@@ -20,7 +20,7 @@ const Profile = ({
                    },
                  }) => {
   const profile = useSelector(state => state.profile);
-  
+
   // function handleClickEditProfile() {
   //   window.location.href = "/tuiter/edit-profile"
   // }
@@ -54,8 +54,11 @@ const Profile = ({
                   fontSize: '18px'
                 }}
           // onClick={handleClickEditProfile}
-        ><Link to={'/tuiter/edit-profile'} style={{textDecoration: 'none', color: 'inherit'}}>
-          Edit Profile</Link>
+        >
+          <Link
+            to={'/tuiter/edit-profile'}
+            style={{textDecoration: 'none', color: 'inherit'}}>Edit Profile
+          </Link>
         </button>
       </div>
 

@@ -83,17 +83,59 @@ const EditProfileComponent = () => {
                     style={{textDecoration: 'none', color: 'inherit'}}>Save</Link>
             </button>
 
-
           </div>
         </div>
         <div className="banner-container mt-1">
-          <div className="avatar-container">
+          <div className="avatar-container " style={{width: 'max-content'}}>
             <img className='avatar-image' src={`../../images/${formValues.profilePicture}`}/>
+            <div className={'me-2 avatar-center'} style={{
+              backgroundColor: 'black',
+              borderRadius: '50%',
+              height: '50px',
+              width: '50px',
+              opacity: '0.6',
+            }}>
+              <i className="fa-solid fa-camera " style={{
+                color: 'white',
+                marginLeft: '12px',
+                marginTop: '12px',
+              }}></i>
+            </div>
+
           </div>
           <img
             className="banner-image"
             src={
               '../../images/banner.png'}/>
+          <div className={'d-flex banner-center'}>
+            <div className={'me-2'} style={{
+              backgroundColor: 'black',
+              borderRadius: '50%',
+              height: '50px',
+              width: '50px',
+              opacity: '0.6',
+            }}>
+              <i className="fa-solid fa-camera " style={{
+                color: 'white',
+                marginLeft: '12px',
+                marginTop: '12px',
+              }}></i>
+            </div>
+            <div className={'ms-2'} style={{
+              backgroundColor: 'black',
+              borderRadius: '50%',
+              height: '50px',
+              width: '50px',
+              opacity: '0.6',
+            }}>
+              <i className="fa-solid fa-xmark" style={{
+                color: 'white',
+                marginLeft: '17px',
+                marginTop: '13px',
+              }}></i>
+            </div>
+          </div>
+
         </div>
         <div style={{height: '90px'}}></div>
         <div>
