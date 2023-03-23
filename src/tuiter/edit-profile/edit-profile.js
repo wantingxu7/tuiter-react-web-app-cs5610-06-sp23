@@ -41,6 +41,7 @@ const EditProfileComponent = () => {
       followersCount: profile.followersCount
     });
     console.log("formValues", formValues);
+    console.log("date", profile.dateOfBirth, typeof profile.dateOfBirth);
   }, []);
 
 
@@ -142,121 +143,106 @@ const EditProfileComponent = () => {
         </div>
         <div style={{height: '90px'}}></div>
         <div>
-          <div className="card ms-3 me-3">
-            <label
-              htmlFor="firstname"
-              className="ms-2 mt-1"
-              style={{
-                color: 'grey',
-                fontSize: '18px',
-              }}
-            >First Name</label>
+          <div className="form-floating mb-3 ms-3 me-3">
             <input
               type="text"
               className="form-control"
-              id="firstname"
-              name="firstname"
+              id="fistName"
               value={formValues.firstName}
-              onChange={e => setFormValues({...formValues, firstName: e.target.value})}
-              style={{
-                borderColor: 'white',
-                height: '40px'
-              }}
-            />
-          </div>
-          <div className="card ms-3 me-3 mt-3">
+              onChange={(e) =>
+                setFormValues({...formValues, firstName: e.target.value})
+              }
+              placeholder="name@example.com"/>
             <label
-              htmlFor="lastname"
-              className="ms-2 mt-1"
+              htmlFor="fistName"
               style={{
-                color: 'grey',
-                fontSize: '18px',
+                color: "grey",
+                fontSize: "20px",
               }}
-            >Last Name</label>
+            >First Name</label>
+          </div>
+
+          <div className="form-floating mb-3 ms-3 me-3">
             <input
               type="text"
               className="form-control"
               id="lastname"
-              name="lastname"
               value={formValues.lastName}
-              style={{
-                borderColor: 'white',
-                height: '40px'
-              }}
+              placeholder="name@example.com"
               onChange={e => {
-                console.log("onchange")
+                // console.log("onchange")
                 setFormValues({...formValues, lastName: e.target.value})
-                console.log(formValues)
+                // console.log(formValues)
               }
-
               }
             />
-          </div>
-          <div className="card ms-3 me-3 mt-3">
             <label
-              htmlFor="bio"
-              className="ms-2 mt-1"
+              htmlFor="lastname"
               style={{
                 color: 'grey',
-                fontSize: '18px',
+                fontSize: '20px',
               }}
-            >Bio</label>
-            <input
+            >Last Name</label>
+
+
+          </div>
+          <div className="form-floating ms-3 me-3 mt-3">
+            <textarea
               type="text"
               className="form-control"
               id="bio"
               name="bio"
               value={formValues.bio}
+              placeholder={"What's happening?"}
               style={{
-                borderColor: 'white',
-                wordWrap: 'break-word',
-                height: 'auto',
-                minHeight: '60px',
-                maxHeight: '120px',
-                overflowY: 'auto',
+                height: '140px',
+                overflowY: 'scroll',
               }}
               onChange={e => setFormValues({...formValues, bio: e.target.value})}
             />
-          </div>
-          <div className="card ms-3 me-3 mt-3">
             <label
-              htmlFor="location"
-              className="ms-2 mt-1"
+              htmlFor="bio"
               style={{
                 color: 'grey',
-                fontSize: '18px',
+                fontSize: '20px',
               }}
-            >Location</label>
+            >Bio</label>
+          </div>
+          <div className="form-floating ms-3 me-3 mt-3">
             <input
               type="text"
               className="form-control"
               id="location"
               value={formValues.location}
+              placeholder={"Where are you?"}
               onChange={e => setFormValues({...formValues, location: e.target.value})}
               style={{
-                borderColor: 'white',
-                height: '40px'
+                height: 'auto'
               }}/>
-          </div>
-          <div className="card ms-3 me-3 mt-3">
             <label
-              htmlFor="website"
-              className="ms-2 mt-1"
+              htmlFor="location"
               style={{
                 color: 'grey',
-                fontSize: '18px',
+                fontSize: '20px',
               }}
-            >Website</label>
+            >Location</label>
+          </div>
+          <div className="form-floating ms-3 me-3 mt-3">
             <input
               type="text"
               className="form-control"
               id="website"
               value={formValues.website}
+              placeholder={"https://example.com"}
               onChange={e => setFormValues({...formValues, website: e.target.value})}
+            />
+            <label
+              htmlFor="website"
               style={{
-                borderColor: 'white',
-                height: '40px'
-              }}/>
+                color: 'grey',
+                fontSize: '20px',
+              }}
+            >Website</label>
           </div>
           <div className=" card ms-2 me-3 mt-3" style={{borderColor: 'white'}}>
             <div className={'d-flex'}>
@@ -265,7 +251,7 @@ const EditProfileComponent = () => {
                 className="ms-2 mt-1"
                 style={{
                   color: 'grey',
-                  fontSize: '18px',
+                  fontSize: '20px',
                   width: 'max-content'
                 }}
               >Birth Date · </label>
@@ -279,7 +265,10 @@ const EditProfileComponent = () => {
                         backgroundColor: 'white',
                         borderColor: 'white',
                         color: '#1DA1F2'
-                      }}>Edit
+                      }}
+                      onClick={() => {
+                      }}
+              >Edit
               </button>
             </div>
             <div>
