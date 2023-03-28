@@ -1,24 +1,25 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {deleteTuit} from "./tuits-reducer";
+// import {deleteTuit} from "./tuits-reducer";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
 
 const TuitItem = (
   {post}
 ) => {
   const dispatch = useDispatch();
   const deleteTuitHandler = (id) => {
-    dispatch(deleteTuit(id));
+    dispatch(deleteTuitThunk(id));
   }
 
   return (
-    <div className=" wd-one-post-main">
+    <div className=" wd-one-post-main ms-0">
       <div className="wd-post-left">
         <img className="wd-profile-photo" src={`/images/${post.image}`}/>
       </div>
       <div className="wd-post-right ms-3">
         <div className="wd-first-line mt-2" style={{fontSize: "18px"}}>
           <div className="float-start">
-            <span className="fw-bold me-1">{post.userName}</span><i
+            <span className="fw-bold me-1">{post.username}</span><i
             className="fa-solid fa-circle-check me-1"></i><span
             className="me-1 text-muted">{post.handle}</span><span
             className="me-1 text-muted">·</span><span className="text-muted">{post.time}</span>
