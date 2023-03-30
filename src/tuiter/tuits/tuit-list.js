@@ -18,6 +18,7 @@ const TuitList = () => {
     <div style={{
       fontSize: "18px",
       // border: "1px solid lightGrey",
+      width: "100%",
       borderRadius: "8px"
     }}>
       {
