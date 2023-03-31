@@ -3,8 +3,9 @@ import axios from "axios";
 // const TUITS_API = 'http://localhost:4000/api/tuits';
 // const TUITS_API = 'https://tuiter-node-server-app-tw2m.onrender.com/api/tuits';
 const API_BASE = process.env.REACT_APP_API_BASE;
-const TUITS_API = `${API_BASE}/tuits`;
-console.log("process.env" + process.env)
+// const TUITS_API = `${API_BASE}/tuits`;
+const TUITS_API = 'https://tuiter-node-server-app-23fall.herokuapp.com/api/tuits';
+console.log("process.env" + process.env.REACT_APP_API_BASE)
 console.log("TUITS API is " + TUITS_API);
 
 export const createTuit = async (tuit) => {
